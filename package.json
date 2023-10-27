@@ -1,0 +1,29 @@
+{
+  "name": "plex-bot",
+  "version": "1.0.0",
+  "description": "Discord bot for a plex server to manage media requests and downtime notifications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "commands": "node deploy-commands.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/X3llus/plex-bot.git"
+  },
+  "author": "Lilly Coates",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/X3llus/plex-bot/issues"
+  },
+  "homepage": "https://github.com/X3llus/plex-bot#readme",
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "node-fetch": "^3.3.2",
+    "undici": "^5.27.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.52.0"
+  }
+}
