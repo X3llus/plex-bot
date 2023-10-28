@@ -5,6 +5,12 @@ module.exports = {
         .setName('stop')
         .setDescription('stop running plex checks'),
     async execute(interaction) {
+        // Check if allowed to run command
+        if (!interaction.member.roles.cache.has('1167949158334873600')) {
+            interaction.reply('You don\'t have the correct role for this command');
+            return;
+        }
+
         if (global.running) {
             clearInterval(global.checkInterval);
             global.running = false;

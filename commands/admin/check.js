@@ -4,40 +4,22 @@ const { plexUrl } = require('../../config.json');
 
 // rest of your code here
 module.exports = {
+    cooldown: 60,
     data: new SlashCommandBuilder()
         .setName('check')
         .setDescription('start running the plex checks.'),
     async execute(interaction) {
-        let resp;
+        console.log('running check');
         try {
-            resp = await request(plexUrl, {
+            const resp = await request(plexUrl, {
                 dispatcher: new Agent({
                     headersTimeout: 1000,
                 }),
             });
+            console.log('Plex Response', resp);
             interaction.channel.send(`${interaction.member} the plex is up`);
         } catch (e) {
             interaction.channel.send(`${interaction.member} the plex is down`);
         }
-
-        if (global.running) return await interaction.reply('Already running');
-        else await interaction.reply('Started');
-
-        global.running = true;
-        global.checkInterval = setInterval(async () => {
-            // Check if the server is down
-            try {
-                resp = await request(plexUrl, {
-                    dispatcher: new Agent({
-                        headersTimeout: 1000,
-                    }),
-                });
-            } catch (e) {
-                clearInterval(global.checkInterval);
-                global.running = false;
-                interaction.channel.send(`${interaction.member} the plex is down, stopping auto checks.`);
-            }
-
-        }, 600000);
     },
 };
