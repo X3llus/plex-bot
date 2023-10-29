@@ -7,7 +7,7 @@ module.exports = {
     cooldown: 60,
     data: new SlashCommandBuilder()
         .setName('check')
-        .setDescription('start running the plex checks.'),
+        .setDescription('check if the plex is currently online.'),
     async execute(interaction) {
         console.log('running check');
         try {

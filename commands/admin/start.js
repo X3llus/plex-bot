@@ -1,6 +1,7 @@
 const { SlashCommandBuilder } = require('discord.js');
 const { request, Agent } = require('undici');
-const { plexUrl } = require('../../config.json');
+const { plexUrl, downPing } = require('../../config.json');
+const { checkAdmin } = require('../../admin');
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -8,7 +9,7 @@ module.exports = {
         .setDescription('stop running plex checks'),
     async execute(interaction) {
         // Check if allowed to run command
-        if (!interaction.member.roles.cache.has('1167949158334873600')) {
+        if (!checkAdmin(interaction)) {
             interaction.reply('You don\'t have the correct role for this command');
             return;
         }
@@ -29,7 +30,7 @@ module.exports = {
             } catch (e) {
                 clearInterval(global.checkInterval);
                 global.running = false;
-                interaction.channel.send(`${interaction.member} the plex is down, stopping auto checks.`);
+                interaction.channel.send(`<@${downPing}> the plex is down, stopping auto checks.`);
             }
 
         }, 600000);

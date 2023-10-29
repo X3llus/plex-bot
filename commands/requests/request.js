@@ -82,6 +82,7 @@ module.exports = {
         const response = await interaction.reply({
             content: 'Is the requested title one of the below?',
             components: [row],
+            ephemeral: true,
         });
 
         // After response
@@ -96,9 +97,9 @@ module.exports = {
                     'member': interaction.member,
                     'title': interaction.options.getString('title'),
                 });
-                await confirmation.update({ content: 'Adding ' + interaction.options.getString('title') + ' to requests!', components: [] });
+                await confirmation.update({ content: 'Adding ' + interaction.options.getString('title') + ' to requests!', components: [], ephemeral: true });
             } else {
-                await confirmation.update({ content: `${confirmation.customId} is already in the library!`, components: [] });
+                await confirmation.update({ content: `${confirmation.customId} is already in the library!`, components: [], ephemeral: true });
             }
         } catch (e) {
             await interaction.editReply({ content: 'Confirmation not received within 1 minute, cancelling', components: [] });

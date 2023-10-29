@@ -21,6 +21,11 @@ module.exports = {
             });
         }
 
-        interaction.reply(outString);
+        if (/\S/.test(outString)) {
+            interaction.reply(outString);
+        } else {
+            interaction.reply('Request list is empty!');
+        }
+
     },
 };
