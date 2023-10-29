@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MediaContainer size="17">
+<Hub title="Shows" type="show" hubIdentifier="show" context="" size="0" more="0" style="shelf">
+</Hub>
+<Hub title="Artists" type="artist" hubIdentifier="artist" context="" size="0" more="0" style="shelf">
+</Hub>
+<Hub title="Albums" type="album" hubIdentifier="album" context="" size="0" more="0" style="shelf">
+</Hub>
+<Hub title="Movies" type="movie" hubIdentifier="movie" context="" size="1" more="0" style="shelf">
+<Video librarySectionTitle="Movies" score="0.33094" ratingKey="17281" key="/library/metadata/17281" guid="plex://movie/5d9f3c9badeb7a0021ce9100" studio="Columbia Pictures" type="movie" title="Spider-Man: Into the Spider-Verse" librarySectionID="20" librarySectionKey="/library/sections/20" contentRating="PG" summary="Phil Lord and Christopher Miller, the creative minds behind The Lego Movie and 21 Jump Street, bring their unique talents to a fresh vision of a different Spider-Man Universe, with a groundbreaking visual style that&#39;s the first of its kind. &#34;Spider-Man(TM): Into the Spider-Verse&#34; introduces Brooklyn teen Miles Morales (Shameik Moore), and the limitless possibilities of the Spider-Verse, where more than one can wear the mask." rating="9.7" audienceRating="9.4" viewCount="1" lastViewedAt="1663716734" year="2018" tagline="More than one wears the mask." thumb="/library/metadata/17281/thumb/1692086830" art="/library/metadata/17281/art/1692086830" duration="7011087" originallyAvailableAt="2018-12-12" addedAt="1663699974" updatedAt="1692086830" audienceRatingImage="rottentomatoes://image.rating.upright" primaryExtraKey="/library/metadata/17282" ratingImage="rottentomatoes://image.rating.ripe">
+<Media id="21433" duration="7011087" bitrate="21469" width="3840" height="1608" aspectRatio="2.35" audioChannels="6" audioCodec="ac3" videoCodec="hevc" videoResolution="4k" container="mkv" videoFrameRate="24p" videoProfile="main 10">
+<Part id="23289" key="/library/parts/23289/1663701545/file.mkv" duration="7011087" file="D:\Plex\Movies\Spider-Man.Into.the.Spider-Verse.2018.2160p.HDR.WEBRip.DD5.1.x265-GASMASK.mkv" size="18817295114" container="mkv" videoProfile="main 10" />
+</Media>
+<Genre tag="Family" />
+<Genre tag="Action" />
+<Country tag="United States of America" />
+<Director tag="Rodney Rothman" />
+<Director tag="Peter Ramsey" />
+<Director tag="Bob Persichetti" />
+<Writer tag="Stan Lee" />
+<Writer tag="Steve Ditko" />
+<Role tag="Shameik Moore" />
+<Role tag="Jake Johnson" />
+<Role tag="Hailee Steinfeld" />
+</Video>
+</Hub>
+<Hub title="Episodes" type="episode" hubIdentifier="episode" context="" size="0" more="0" style="shelf">
+</Hub>
+<Hub title="Tracks" type="track" hubIdentifier="track" context="" size="0" more="0" style="shelf">
+</Hub>
+<Hub title="Photo Albums" type="photoalbum" hubIdentifier="photoalbum" context="" size="0" more="0" style="shelf">
+</Hub>
+<Hub title="Automatic Tags" type="autotag" hubIdentifier="autotag" context="" size="0" more="0" style="shelf">
+</Hub>
+<Hub title="Photos" type="photo" hubIdentifier="photo" context="" size="0" more="0" style="shelf">
+</Hub>
+<Hub title="Tags" type="tag" hubIdentifier="tag" context="" size="0" more="0" style="shelf">
+</Hub>
+<Hub title="Actors" type="actor" hubIdentifier="actor" context="" size="0" more="0" style="shelf">
+</Hub>
+<Hub title="Directors" type="director" hubIdentifier="director" context="" size="0" more="0" style="shelf">
+</Hub>
+<Hub title="Genres" type="genre" hubIdentifier="genre" context="" size="0" more="0" style="shelf">
+</Hub>
+<Hub title="Collections" type="collection" hubIdentifier="collection" context="" size="0" more="0" style="shelf">
+</Hub>
+<Hub title="Playlists" type="playlist" hubIdentifier="playlist" context="" size="0" more="0" style="shelf">
+</Hub>
+<Hub title="Shared" type="shared" hubIdentifier="shared" context="" size="0" more="0" style="shelf">
+</Hub>
+<Hub title="Places" type="place" hubIdentifier="place" context="" size="0" more="0" style="shelf">
+</Hub>
+</MediaContainer>

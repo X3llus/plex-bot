@@ -13,11 +13,11 @@ module.exports = {
 
         if (interaction.options.getBoolean('show_requester')) {
             jsonData.forEach(request => {
-                outString += `${request.member.displayName} requested **${request.title_year}**\n`;
+                outString += `${request.member.displayName} requested **${request.title}**\n`;
             });
         } else {
             jsonData.forEach(request => {
-                outString += `**${request.title_year}**\n`;
+                outString += `**${request.title}**\n`;
             });
         }
 

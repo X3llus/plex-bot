@@ -20,7 +20,7 @@ module.exports = {
         global.checkInterval = setInterval(async () => {
             // Check if the server is down
             try {
-                const resp = await request(plexUrl, {
+                const resp = await request(plexUrl + '/identity', {
                     dispatcher: new Agent({
                         headersTimeout: 1000,
                     }),
